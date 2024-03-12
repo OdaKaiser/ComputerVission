@@ -35,7 +35,7 @@ def Maxfilter(A,s):
         return B
 s=5
 Me=Medianfilter(original_image, s)
-Me_image=np.array(Me, dtype='uint8')
+Me_image=np.array(Me, dtype='uint8') #convert to 8 bit 255 after conv data type is obj
 Ma=Maxfilter(original_image, s)
 Ma_image=np.array(Ma, dtype='uint8')
 
