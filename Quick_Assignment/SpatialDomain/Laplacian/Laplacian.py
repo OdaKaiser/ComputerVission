@@ -23,8 +23,6 @@ def Negative(image):
             
     return image
 
-
-
 IMG_SOURCE_DIR = "/home/nomad/Workspace/Master_WorkSpace/ComputerVision/SamplePics/"
 image_file_name = "moon.tif"
 image_dir = IMG_SOURCE_DIR + image_file_name
@@ -46,6 +44,7 @@ laplacian_kernel_a = np.array([[0, 1, 0],
 laplacian_kernel_b = np.array([[1, 1, 1],
                                [1, -8, 1], 
                                [1, 1, 1]])
+
 
 result_a = cv2.filter2D(gblur, -1, laplacian_kernel_a)
 plt.imshow(result_a)

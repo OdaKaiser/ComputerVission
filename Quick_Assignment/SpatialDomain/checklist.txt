@@ -1,13 +1,14 @@
 Histogram Equalization
 Histogram Matching
 Local Histogram Processing
-Convolution operation
+Convolution operation 
 Low pass filters
 -Box kernel
 -Gaussian
 -Nonlinear
 -Lowpass
+Sobel
 Second Derivatives- Laplacian
 Unsharp Masking and High boost Filtering
 First Derivative –Gradient
-Combining Spatial Enhancement Methods
+Combining Spatial Domain Enhancement Methods

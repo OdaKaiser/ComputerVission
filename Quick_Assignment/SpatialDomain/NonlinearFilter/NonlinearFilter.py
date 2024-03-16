@@ -9,11 +9,12 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+#Open the image. 
 IMG_SOURCE_DIR = "/home/nomad/Workspace/Master_WorkSpace/ComputerVision/SamplePics/"
 image_file_name = "rice.png"
 image_dir = IMG_SOURCE_DIR + image_file_name
 original_image = cv2.imread(image_dir, 0)
-
+#Define Filters
 def Medianfilter(A,s):
         h, w = A.shape
         B = np.ones((h,w))
@@ -34,11 +35,14 @@ def Maxfilter(A,s):
         B=B[0:h-s+1,0:w-s+1]
         return B
 s=5
+
 Me=Medianfilter(original_image, s)
 Me_image=np.array(Me, dtype='uint8') #convert to 8 bit 255 after conv data type is obj
+
 Ma=Maxfilter(original_image, s)
 Ma_image=np.array(Ma, dtype='uint8')
 
+#Display
 plt.figure()
 subf1=plt.subplot(1, 3, 1)
 subf1.imshow(cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB))
