@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['SpatialDomain/Combination/Combination.py']
+recent_files = ['SpatialDomain/Combination/Combination.py', '../SIFT/SIFT.py', '../SIFT/Keyspoints.py', 'untitled2.py', 'untitled3.py']
 
 [main]
 version = 0.2.0
